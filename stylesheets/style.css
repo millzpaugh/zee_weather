@@ -1,0 +1,162 @@
+.wrap {
+  width: 96%;
+  margin: 0 auto;
+}
+
+h1{
+  font-family: "News Cycle";
+  font-size:2.7em;
+  margin: 0;
+  display: block;
+  text-align: left;
+  color: white;
+}
+
+h2{
+  font-size:1.5em;
+  margin:0.83em 0;
+}
+
+#list{
+  text-align: center; 
+  list-style-type: none;
+  display:inline-block;
+}
+
+li.temp{
+  float:left;
+  text-align: left;
+}
+
+li.hipster-pic{
+  float:right;
+  margin-left: 20px;
+  position:fixed;
+  margin-top: 2px; 
+  margin-left: 140px; 
+  padding-bottom: 200px; 
+/*  margin-bottom: 1000px; 
+*/}
+
+span.response{
+  font-size: 120px; 
+}
+
+img.scarf{
+  border-radius:50px; 
+  width:40%;
+  height:40%;
+}
+
+#header-horn{
+  width:100%;
+  text-align: left;
+}
+
+
+/*STICKY HEADER*/
+#header-container{
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  opacity: .9;
+  position:fixed;
+  z-index: 1;
+}
+
+/*CENTER CONTENT*/
+
+#container { 
+  margin:0 auto; 
+  overflow:auto; 
+  padding:80px 0; 
+  width:940px; 
+}
+
+#content{}
+
+/*STICKY FOOTER*/
+
+#footer_container { 
+  background-color: black;
+  opacity: .9; 
+  border:1px solid #666; 
+  bottom:0; height:60px; 
+  left:0; 
+  position:fixed; 
+  width:100%; 
+}
+
+#footer { 
+  line-height:60px; 
+  margin:0 auto; 
+  width:940px; 
+  text-align:center; 
+}
+
+/*PAGE STYLING*/
+
+body{
+  font-family:'News Cycle',"Helvetica Neue",Helvetica,Arial,sans-serif; 
+  font-size:100%;line-height:1.5;
+  color:#F0F0FA;
+  background:#3E6B24;
+  list-style-type: none; 
+}
+
+
+/*SEARCH BAR STYLING*/
+
+#search{
+  width:90%;
+  float:left;
+  display:inline-block;
+}
+
+.enter-location{
+  position:fixed;
+  top:15px;
+  left:15px;
+  font-weight:normal;
+}
+
+input{
+  float: left;
+  width: 250px;
+  margin-left: 13em;
+  margin-top: -5px;
+  margin-bottom: 30px; 
+  background-color: #F0F0FA;
+  padding: 10px 0;
+  font-size: 13px;
+  color: black;
+  border-radius: 5px; 
+  border:none;
+  position:fixed;
+}
+
+#add {
+  background-color:#ededed;
+  border-radius:10px;
+  border:1px solid #dcdcdc;
+  color:#777777;
+  font-family:Arial;
+  position:fixed;
+  left:360px;
+}
+
+#add:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+  background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+  background-color:#dfdfdf;
+}
+
+#add:active {
+  position:relative;
+  top:1px;
+
+/*CONTENT STYLING*/
+
+
+
