@@ -13,13 +13,14 @@ h1{
 }
 
 h2{
-  font-size:1.5em;margin:0.83em 0;
+  font-size:1.5em;
+  margin:0.83em 0;
 }
 
 #list{
-  text-align: left; 
+  text-align: center; 
   list-style-type: none;
-  margin-left: -40px; 
+  display:inline-block;
 }
 
 li.temp{
@@ -29,14 +30,20 @@ li.temp{
 
 li.hipster-pic{
   float:right;
-}
+  margin-left: 20px;
+  position:fixed;
+  margin-top: 2px; 
+  margin-left: 140px; 
+  padding-bottom: 200px; 
+/*  margin-bottom: 1000px; 
+*/}
 
 span.response{
   font-size: 120px; 
 }
 
 img.scarf{
-  border-radius:50%; 
+  border-radius:50px; 
   width:40%;
   height:40%;
 }

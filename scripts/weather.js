@@ -1,8 +1,18 @@
 var allWeatherInfo; 
 
-var winterPhotos = []
- 
+var winterPhotos = ["images/winter/1.jpg", "images/winter/2.jpg", "images/winter/3.jpg", "images/winter/4.jpg","images/winter/5.jpg", "images/winter/6.jpg", "images/winter/7.jpg", "images/winter/8.jpg", "images/winter/9.jpg", "images/winter/10.jpg", "images/winter/11.jpg"]
 
+var winterPhoto = randomFrom(winterPhotos); 
+
+var summerPhotos = ["images/summer/12.jpg", "images/summer/13.jpg", "images/summer/14.jpg", "images/summer/15.jpg","images/summer/16.jpg", "images/summer/17.jpg", "images/summer/18.jpg", "images/summer/19.jpg", "images/summer/20.jpg", "images/summer/21.jpg", "images/summer/22.jpg", "images/summer/23.jpg"]
+
+var summerPhoto = randomFrom(winterPhotos); 
+
+function randomFrom(arr){
+    var randomIndex = Math.floor(Math.random() * arr.length);
+    return arr[randomIndex];
+}
+ 
 $(function(){   
 
   $("form").on("submit",function(e){
@@ -46,7 +56,7 @@ $(function(){
         $("#list").append(temp); 
         hipster =  $("<li class='hipster-pic'>" + "<h2>But here's a hipster scarf..." + "</h2></li>");  
         $("#list").append(hipster); 
-        hipsterImg = $("<img class='scarf' src=" + "'http://justjamiescarves.files.wordpress.com/2010/09/hipster.jpg'" + ">")
+        hipsterImg = $("<img class='scarf' src=" + randomFrom(summerPhotos) + ">")
         $("li.hipster-pic").append(hipsterImg); 
       } 
       else{
@@ -54,7 +64,7 @@ $(function(){
         $("#list").append(temp); 
         hipster =  $("<li class='hipster-pic'>" + "<h2>But here's a hipster scarf..." + "</h2></li>");  
         $("#list").append(hipster); 
-        hipsterImg = $("<img class='scarf' src=" + "'http://justjamiescarves.files.wordpress.com/2010/09/hipster.jpg'" + ">")
+        hipsterImg = $("<img class='scarf' src=" + randomFrom(winterPhotos) + ">")
         $("li.hipster-pic").append(hipsterImg); 
       }  
      }
