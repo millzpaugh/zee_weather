@@ -1,3 +1,52 @@
+.wrap {
+  width: 96%;
+  margin: 0 auto;
+}
+
+h1{
+  font-family: "News Cycle";
+  font-size:2.7em;
+  margin: 0;
+  display: block;
+  text-align: left;
+  color: white;
+}
+
+h2{
+  font-size:1.5em;margin:0.83em 0;
+}
+
+#list{
+  text-align: left; 
+  list-style-type: none;
+  margin-left: -40px; 
+}
+
+li.temp{
+  float:left;
+  text-align: left;
+}
+
+li.hipster-pic{
+  float:right;
+}
+
+span.response{
+  font-size: 120px; 
+}
+
+img.scarf{
+  border-radius:50%; 
+  width:40%;
+  height:40%;
+}
+
+#header-horn{
+  width:100%;
+  text-align: left;
+}
+
+
 /*STICKY HEADER*/
 #header-container{
   height: 60px;
@@ -31,7 +80,12 @@
   width:100%; 
 }
 
-#footer { line-height:60px; margin:0 auto; width:940px; text-align:center; }
+#footer { 
+  line-height:60px; 
+  margin:0 auto; 
+  width:940px; 
+  text-align:center; 
+}
 
 /*PAGE STYLING*/
 
@@ -43,36 +97,8 @@ body{
   list-style-type: none; 
 }
 
-header{margin-top:5em;}
 
-.wrap {
-  width: 96%;
-  margin: 0 auto;
-}
-
-h1{
-  font-family: "News Cycle";
-  font-size:2.3em;
-  margin: 0;
-  display: block;
-  text-align: center;
-  color: white;
-/*  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.75);
-*/}
-
-h1.where{
-  display: block;
-  font-size: 1.25em;
-  line-height: .8em;
-}
-
-h2{
-  font-size:1.5em;margin:0.83em 0;
-}
-
-h3{
-  font-size:1.17em;margin:1em 0;
-}
+/*SEARCH BAR STYLING*/
 
 #search{
   width:90%;
@@ -123,15 +149,7 @@ input{
   position:relative;
   top:1px;
 
-#list{
-  text-align: center; 
-  list-style-type: none; 
-}
+/*CONTENT STYLING*/
 
-li.temp{
-}
 
-li.response{
-  font-size: 120px;  
-}
 

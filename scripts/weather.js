@@ -1,8 +1,9 @@
 var allWeatherInfo; 
 
-$(function(){ 
-  $('.what').addClass('animated FadeInRight');
-  $('.weather-header').addClass('animated slideInLeft')
+var winterPhotos = []
+ 
+
+$(function(){   
 
   $("form").on("submit",function(e){
     e.preventDefault();
@@ -17,6 +18,7 @@ $(function(){
   });
 
 }); 
+
 
   function getWeather(location) {
     $.ajax({
@@ -42,9 +44,18 @@ $(function(){
       if(degreesF > 60){
         temp =  $("<li class='temp'>" + "<span class='response'>No!</span><br> You're in " + "<span class='city'>" + allWeatherInfo.name + "." + "</span>" + "<br>It's " + degreesF + "°F / " + degreesC + "°C. " + "</li>");
         $("#list").append(temp); 
-      } else{
-        temp =  $("<li class='temp'>" + "<span class='response'>Yes!</span><br> You're in " + "<span class='city'>" + allWeatherInfo.name + "</span>" + " and it's " + degreesF + "°F / " + degreesC + "°C " + "</li>");
+        hipster =  $("<li class='hipster-pic'>" + "<h2>But here's a hipster scarf..." + "</h2></li>");  
+        $("#list").append(hipster); 
+        hipsterImg = $("<img class='scarf' src=" + "'http://justjamiescarves.files.wordpress.com/2010/09/hipster.jpg'" + ">")
+        $("li.hipster-pic").append(hipsterImg); 
+      } 
+      else{
+        temp =  $("<li class='temp'>" + "<span class='response'>Yes!</span><br> You're in " + "<span class='city'>" + allWeatherInfo.name + "</span>" + "<br>It's " + degreesF + "°F / " + degreesC + "°C." + "</li>");
         $("#list").append(temp); 
+        hipster =  $("<li class='hipster-pic'>" + "<h2>But here's a hipster scarf..." + "</h2></li>");  
+        $("#list").append(hipster); 
+        hipsterImg = $("<img class='scarf' src=" + "'http://justjamiescarves.files.wordpress.com/2010/09/hipster.jpg'" + ">")
+        $("li.hipster-pic").append(hipsterImg); 
       }  
      }
     // }
