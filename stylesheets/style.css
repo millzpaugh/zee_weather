@@ -1,0 +1,137 @@
+/*STICKY HEADER*/
+#header-container{
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  opacity: .9;
+  position:fixed;
+  z-index: 1;
+}
+
+/*CENTER CONTENT*/
+
+#container { 
+  margin:0 auto; 
+  overflow:auto; 
+  padding:80px 0; 
+  width:940px; 
+}
+
+#content{}
+
+/*STICKY FOOTER*/
+
+#footer_container { 
+  background-color: black;
+  opacity: .9; 
+  border:1px solid #666; 
+  bottom:0; height:60px; 
+  left:0; 
+  position:fixed; 
+  width:100%; 
+}
+
+#footer { line-height:60px; margin:0 auto; width:940px; text-align:center; }
+
+/*PAGE STYLING*/
+
+body{
+  font-family:'News Cycle',"Helvetica Neue",Helvetica,Arial,sans-serif; 
+  font-size:100%;line-height:1.5;
+  color:#F0F0FA;
+  background:#3E6B24;
+  list-style-type: none; 
+}
+
+header{margin-top:5em;}
+
+.wrap {
+  width: 96%;
+  margin: 0 auto;
+}
+
+h1{
+  font-family: "News Cycle";
+  font-size:2.3em;
+  margin: 0;
+  display: block;
+  text-align: center;
+  color: white;
+/*  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.75);
+*/}
+
+h1.where{
+  display: block;
+  font-size: 1.25em;
+  line-height: .8em;
+}
+
+h2{
+  font-size:1.5em;margin:0.83em 0;
+}
+
+h3{
+  font-size:1.17em;margin:1em 0;
+}
+
+#search{
+  width:90%;
+  float:left;
+  display:inline-block;
+}
+
+.enter-location{
+  position:fixed;
+  top:15px;
+  left:15px;
+  font-weight:normal;
+}
+
+input{
+  float: left;
+  width: 250px;
+  margin-left: 13em;
+  margin-top: -5px;
+  margin-bottom: 30px; 
+  background-color: #F0F0FA;
+  padding: 10px 0;
+  font-size: 13px;
+  color: black;
+  border-radius: 5px; 
+  border:none;
+  position:fixed;
+}
+
+#add {
+  background-color:#ededed;
+  border-radius:10px;
+  border:1px solid #dcdcdc;
+  color:#777777;
+  font-family:Arial;
+  position:fixed;
+  left:360px;
+}
+
+#add:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+  background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+  background-color:#dfdfdf;
+}
+
+#add:active {
+  position:relative;
+  top:1px;
+
+#list{
+  text-align: center; 
+  list-style-type: none; 
+}
+
+li.temp{
+}
+
+li.response{
+  font-size: 120px;  
+}
+
