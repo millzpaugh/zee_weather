@@ -27,20 +27,26 @@ function randomFrom(arr){
       degreesF = Math.round((allWeatherInfo.main.temp- 273) * 9/5 + 32);
       degreesC =  Math.round((allWeatherInfo.main.temp- 273)); 
       if(degreesF > 60){
-        changeBackground();        
+        scarfBackground();        
         temp =  $("<li class='temp'>" + "<span class='response'>No!</span><br> You're in " + "<span class='city'>" + allWeatherInfo.name + "." + "</span>" + "<br>It's " + degreesF + "°F / " + degreesC + "°C. " + "<br><span id='phrase'>But you could always wear a hipster scarf...</span>" + "</li>");
         $("#list").append(temp); 
         $('body').css('background-image', 'url(../' + randomFrom(summerPhotos) + ")'");} 
       else{
+        coldBackground(); 
         temp =  $("<li class='temp'>" + "<span class='response'>Yes!</span><br> You're in " + "<span class='city'>" + allWeatherInfo.name + "</span>" + "<br>It's " + degreesF + "°F / " + degreesC + "°C." + "</li>");
         $("#list").append(temp); 
       }  
      }
 
 //Changes background if weather is too hot for a scarf 
-function changeBackground(){
+function scarfBackground(){
   $('body').css('background-image', "url('" + randomFrom(summerPhotos) + "')" );
 }
+
+function coldBackground(){
+  $('body').css('background-image', "url('images/old_man.jpg')" );
+}
+
 
 // Window onload events 
 $(function(){   
