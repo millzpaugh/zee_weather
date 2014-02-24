@@ -60,14 +60,9 @@ $(function(){
   }); 
 
   $('button#add').click(function(){
-    if (allWeatherInfo.message == "Error: Not found city"){
-      alert("Oops! Please enter a different city.")
-    }
-    else{
       $("#list").empty(); 
       appendWeather(); 
       $("#list").empty(); 
-    }
   });
 }); 
 
