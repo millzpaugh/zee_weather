@@ -8,10 +8,6 @@ body{
   background-size: cover; 
 }
 
-#background-change{
-  background-color:red;
-}
-
 .wrap {
   width: 96%;
   margin: 0 auto;
@@ -47,16 +43,6 @@ li.temp{
   float:left;
   text-align: left;
 }
-
-li.hipster-pic{
-  float:right;
-  margin-left: 20px;
-  position:fixed;
-  margin-top: 2px; 
-  margin-left: 140px; 
-  padding-bottom: 200px; 
-/*  margin-bottom: 1000px; 
-*/}
 
 span.response{
   font-size: 120px; 
@@ -121,22 +107,17 @@ img.scarf{
   margin-left: 300px;
 }
 
-/*PAGE STYLING*/
-
-
-
-
 /*SEARCH BAR STYLING*/
 
 #search{
-  width:90%;
+  width:10%;
   float:left;
   display:inline-block;
 }
 
 .enter-location{
   position:fixed;
-  top:15px;
+  top:20px;
   left:15px;
   font-weight:normal;
 }
@@ -145,7 +126,7 @@ input{
   float: left;
   width: 250px;
   margin-left: 13em;
-  margin-top: -5px;
+  margin-top: -8px;
   margin-bottom: 30px; 
   background-color: #F0F0FA;
   padding: 10px 0;
@@ -176,12 +157,9 @@ input{
 #add:active {
   position:relative;
   top:1px;
-
-/*CONTENT STYLING*/
-
-a:link {
-  color:black;
 }
+
+
 
 
 

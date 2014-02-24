@@ -6,33 +6,23 @@
   <link rel="stylesheet" href="stylesheets/animate.css">
   <title>i &hearts; weather</title>
   <link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
-  <style type="text/css">
-    html { height: 100% }
-    body { height: 100%; margin: 0; padding: 0 }
-    #map-canvas { height: 100% }
-  </style>
 </head>
 
 <body>
-<div id="background-change"> 
+  
 <!-- BEGIN: Sticky Header -->
 <div id="header-container">
   <div id="header">
     <section id="search"> 
       <div id="search-form-container">
         <h3><span class="enter-location">Enter your location:</span></h3>
-          <form id="search-form">
-            <input id="searchbar" type="search" placeholder="City, State or City, Country"/>
-            <button id="add">Search</button>
-          </form>
-        </div> 
-      </section> 
-
-      <section id="social-media">
-
-      </section> 
-    </div>
-  </div> 
+        <form id="search-form">
+          <input id="searchbar" type="search" placeholder="City, State or City, Country"/>
+          <button id="add">Search</button>
+        </form>
+      </div> 
+    </section>
+  </div>
 </div> 
 <!-- END: Sticky Header -->
 
@@ -40,19 +30,16 @@
 
 <!-- BEGIN: Page Content -->
 <div id="container">
-    <div id="content">
-
-  <div class="wrap">
-    <div id="title" class=".fadeInRight"> 
-      <h1>Do you need a scarf today?</h1> 
-    <hr id="header-horn">
-    <div="list-container">      
-      <ul id="list">Enter your location to find out.</ul>
-    </div> 
-    </div> 
-  </div> 
-
-      
+  <div id="content">
+    <div class="wrap">
+      <div id="title" class=".fadeInRight"> 
+        <h1>Do you need a scarf today?</h1> 
+        <hr id="header-horn">
+        <div="list-container">      
+          <ul id="list">Enter your location to find out.</ul>
+        </div> 
+      </div> 
+    </div>     
   </div>          
 </div>
 <!-- END: Page Content -->
@@ -60,8 +47,8 @@
     
 <!-- BEGIN: Sticky Footer -->
 <div id="footer_container">
-    <div id="footer">
-    <a href="https://github.com/millzpaugh/zee_weather"><img src="images/githublogo.png" width=16px height=16px>Check out the code</a>
+  <div id="footer">
+    <a href="https://github.com/millzpaugh/zee_weather"><img id="github" src="images/githublogo.png" width=16px height=16px> Check out the code</a>
   </div>
 </div>
 
@@ -69,7 +56,6 @@
 
   <script src="scripts/jquery.js"></script>
   <script src="scripts/weather.js"></script> 
-  
-</div> 
+</div>   
 </body>
 </html>

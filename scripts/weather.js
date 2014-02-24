@@ -36,14 +36,14 @@ function randomFrom(arr){
         temp =  $("<li class='temp'>" + "<span class='response'>Yes!</span><br> You're in " + "<span class='city'>" + allWeatherInfo.name + "</span>" + "<br>It's " + degreesF + "°F / " + degreesC + "°C." + "</li>");
         $("#list").append(temp); 
       }  
-     }
+    }
 
 //Changes background if weather is too hot for a scarf 
 function scarfBackground(){
   $('body').css('background-image', "url('" + randomFrom(summerPhotos) + "')" );
 }
 
-// Static backround if cold 
+// Static background if cold 
 function coldBackground(){
   $('body').css('background-image', "url('images/old_man.jpg')" );
 }
