@@ -28,7 +28,7 @@ function randomFrom(arr){
       degreesC =  Math.round((allWeatherInfo.main.temp- 273)); 
       if(degreesF > 60){
         scarfBackground();        
-        temp =  $("<li class='temp'>" + "<span class='response'>No!</span><br> You're in " + "<span class='city'>" + allWeatherInfo.name + "." + "</span>" + "<br>It's " + degreesF + "°F / " + degreesC + "°C. " + "<br><span id='phrase'>But you could always wear a hipster scarf...</span>" + "</li>");
+        temp =  $("<li class='temp'>" + "<span class='response'>No!</span><br> You're in " + "<span class='city'>" + allWeatherInfo.name + "." + "</span>" + "<br>It's " + degreesF + "°F / " + degreesC + "°C. " + "<br><span id='phrase'>But you could always wear a hipster scarf...</span><br>(Press enter for more options.)" + "</li>");
         $("#list").append(temp); 
         $('body').css('background-image', 'url(../' + randomFrom(summerPhotos) + ")'");} 
       else{
