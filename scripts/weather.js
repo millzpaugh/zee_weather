@@ -1,6 +1,6 @@
 var allWeatherInfo; 
 
-var summerPhotos = ["images/summer/12.jpg", "images/summer/13.jpg", "images/summer/14.jpg", "images/summer/15.jpg","images/summer/16.jpg", "images/summer/17.jpg", "images/summer/18.jpg", "images/summer/19.jpg", "images/summer/20.jpg", "images/summer/21.jpg", "images/summer/22.jpg", "images/summer/23.jpg", "images/fring/24.jpg", "images/fring/25.jpg", "images/fring/26.jpg", "images/fring/27.jpg","images/fring/28.jpg", "images/fring/29.jpg", "images/fring/30.jpg", "images/fring/31.jpg", "images/fring/32.jpg", "images/fring/33.jpg"] 
+var summerPhotos = ["images/summer/12.jpg", "images/summer/14.jpg", "images/summer/15.jpg","images/summer/16.jpg", "images/summer/17.jpg", "images/summer/20.jpg", "images/summer/22.jpg", "images/fring/24.jpg", "images/fring/25.jpg", "images/fring/26.jpg", "images/fring/28.jpg", "images/fring/29.jpg", "images/fring/30.jpg", "images/fring/31.jpg", "images/fring/32.jpg", "images/fring/33.jpg", "images/fring/34.jpg", "images/fring/35.jpg", "images/fring/36.jpg","images/fring/37.jpg"] 
 
 // Grabs Random Photo 
 function randomFrom(arr){
@@ -43,6 +43,7 @@ function scarfBackground(){
   $('body').css('background-image', "url('" + randomFrom(summerPhotos) + "')" );
 }
 
+// Static backround if cold 
 function coldBackground(){
   $('body').css('background-image', "url('images/old_man.jpg')" );
 }
