@@ -11,7 +11,7 @@ function randomFrom(arr){
 // Pings open weather API 
   function getWeather(location) {
     $.ajax({
-      url: "http://api.openweathermap.org/data/2.5/weather?q=" + location, 
+      url: "http://api.openweathermap.org/data/2.5/weather?q=" + location + "&APPID=dd6d612e24b7d9caa94e93448aaea752", 
       type: "GET",
       dataType: "json",
       success: function(response){
